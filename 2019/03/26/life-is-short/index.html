@@ -431,6 +431,23 @@ height:50vh;
 <!-- City版安装代码已完成 -->
     
     
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        // id: "Life is SHORT", // 可选。默认为 location.href
+        owner: 'popo4u',
+        repo: 'git@github.com:popo4u/GitComment.git',
+        oauth: {
+            client_id: 'd953b1a692176527b73b',
+            client_secret: '9d4f434d4c8c10177ed467f9b3de955a66d0b32a',
+        },
+    })
+    gitment.render('container')
+
+</script>
+
     <!-- partial('_partial/comment/changyan') -->
     <!--PC版-->
 
